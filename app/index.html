@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Landify</title>
+</head>
+
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="main-nav" aria-label="Main">
+        <div class="main-nav__menu">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"><b>About</b></a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"><b>Pricing</b></a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__logo">
+          <img src="/assets/logo.png" alt="Logo" />
+        </div>
+        <div class="main-nav__buttons">
+          <button class="login button-secondary">Login</button>
+          <button class="sign-up button-primary">Sign up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <article class="hero__data">
+          <h1 class="hero__data__title">Landing page UI Kit</h1>
+          <p class="hero__data__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer
+          </p>
+          <button class="hero__data__button button-primary">
+            Get Started
+          </button>
+        </article>
+        <div class="hero__image">
+          <img src="/assets/hero-main.png" alt="Creative block" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <article class="companies">
+          <div class="companies__info">
+            <h2 class="companies__info__title">Get deals from 100+ companies</h2>
+            <p class="companies__info__description">
+              Aute ad commodo sit fugiat non.Non Lorem veniam occaecat minim laborum eiusmod laboris non enim incididunt
+              sunt laborum.Ex officia dolore cillum officia aute consequat ut officia ex elit duis eiusmod consequat.
+            </p>
+          </div>
+          <img class="companies__picture" src="/assets/companies.png" alt="Our companies" />
+        </article>
+
+
+        <div class="stack features">
+          <h2>Discover the key features</h2>
+          <div class="features__container">
+            <article class="feature-card">
+              <img class=feature-card__image src="/assets/feature-1.png" alt="Our features" />
+              <h3 class="feature-card__title">Multiple links</h3>
+              <p class="feature-card__description">
+                Add multiple links in Instagram instead of just one.
+              </p>
+              <a><small class="feature-card__link">Show more</small></a>
+            </article>
+            <article class="feature-card">
+              <img class=feature-card__image src="/assets/feature-2.png" alt="Our features" />
+              <h3 class="feature-card__title">Online messaging</h3>
+              <p class="feature-card__description">
+                Allow your clients to connect with you with one click.
+              </p>
+              <a><small class="feature-card__link">Show more</small></a>
+            </article>
+            <article class="feature-card">
+              <img class=feature-card__image src="/assets/feature-3.png" alt="Our features" />
+              <h3 class="feature-card__title">Application forms</h3>
+              <p class="feature-card__description">
+                Capture leads and grow your business with them.
+              </p>
+              <a><small class="feature-card__link">Show more</small></a>
+            </article>
+          </div>
+        </div>
+    </section>
+
+    <section class="quote">
+      <div class="container">
+        <div>
+
+          <article class="quote__container">
+            <q class="quote__text">
+              We had an incredible experience working with Landify and were impressed they made such a big difference in
+              only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to
+              get
+              familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level
+              and get more eyes on our product.
+            </q>
+            <p class="quote__author">John Keats</p>
+            <p class="quote__position">CEO at Xion</p>
+          </article>
+
+          <article class="quote__container">
+            <q class="quote__text">
+              Laborum enim ut labore sint nostrud voluptate esse. Pariatur enim proident labore aliqua Lorem sunt.
+              Tempor
+              duis ipsum ex consequat pariatur incididunt ex officia quis Lorem qui ut mollit.
+            </q>
+            <p class="quote__author">Ernest Hemingway</p>
+            <p class="quote__position">CEO at Xion</p>
+          </article>
+
+          <article class="quote__container">
+            <q class="quote__text">
+              Officia ut nulla mollit amet mollit aliqua veniam. Consequat non fugiat cillum aliquip eu. In occaecat
+              excepteur Lorem ex ea eiusmod minim consequat eiusmod enim pariatur adipisicing dolor. Cillum nisi ullamco
+              duis ipsum.
+            </q>
+            <p class="quote__author">Thomas A. Edison</p>
+            <p class="quote__position">CEO at Xion</p>
+          </article>
+
+          <div class="quote__dot__container">
+            <span class="quote__dot__item" onclick="currentSlide(1)"></span>
+            <span class="quote__dot__item" onclick="currentSlide(2)"></span>
+            <span class="quote__dot__item" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
+        <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+      </div>
+    </section>
+
+    <section>
+      <div class="stack stats">
+        <div class="container">
+          <article class="stats-item">
+            <h3 class="stats-item__title">700k</h3>
+            <div class="stats-item__description">
+              <img class=stats-item__image src="/assets/social-dr.png" alt="Youtube" />
+              <p>
+                Youtube subscribers
+              </p>
+            </div>
+          </article>
+          <article class="stats-item">
+            <h3 class="stats-item__title">2.4m</h3>
+            <div class="stats-item__description">
+              <img class=stats-item__image src="/assets/social-ig.png" alt="Instagram" />
+              <p>
+                Instagram Followers
+              </p>
+            </div>
+          </article>
+          <article class="stats-item">
+            <h3 class="stats-item__title">100k</h3>
+            <div class="stats-item__description">
+              <img class=stats-item__image src="/assets/social-yt.png" alt="Dribble" />
+              <p>
+                Dribble Shot Likes
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <article class="our-apps">
+        <div class="container">
+          <div class="our-apps__info">
+            <h2 class="our-apps__info__title">Headline</h2>
+            <p class="our-apps__info__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat
+              cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo
+              volutpat, pharetra, vel.
+            </p>
+            <small class="our-apps__info__link">Get started</small>
+          </div>
+          <img class="our-apps__picture" src="/assets/mobile.png" alt="Our mobile" />
+        </div>
+      </article>
+
+
+      <article class="newsletter">
+        <img class="newsletter__picture" src="/assets/mail.png" alt="Our mobile" />
+        <div class="newsletter__info">
+          <h2 class="newsletter__info__title">Join 569 more people in the waitlist</h2>
+          <input class="newsletter__info__description" />
+          <button class="newsletter__info__link">Join the wait list</button>
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bar">
+
+        <img src="/assets/logo-footer.png" class="footer-bar__logo" alt="Analytics Logo">
+
+
+        <ul class="footer-bar__list">
+          <li class="footer-bar__item">
+            <h4 href="#" class="footer-bar__title">Company</h4>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">About Us</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Blog</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Careers</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="footer-bar__list">
+          <li class="footer-bar__item">
+            <h4 href="#" class="footer-bar__title">Support</h4>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Help Center</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Safety Center</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Company Guidelines</a>
+          </li>
+        </ul>
+
+        <ul class="footer-bar__list">
+          <li class="footer-bar__item">
+            <h4 href="#" class="footer-bar__title">Legal</h4>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Cookies Policy</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Privacy Policy</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Terms of Service</a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Law Enforcement</a>
+          </li>
+        </ul>
+
+
+        <ul class="footer-bar__list-apps">
+          <li class="footer-bar__item">
+            <h4 href="#" class="footer-bar__title">Install App</h4>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">
+              <img src="/assets/gplay.png" alt="Google Play" />
+            </a>
+          </li>
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">
+              <img src="/assets/appstore.png" alt="App Store" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
