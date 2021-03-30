@@ -1,0 +1,133 @@
+
+@media (min-width: 768px) {
+
+    .main-nav{
+			.menu-button{
+				display: none;
+			}
+
+      &__menu{
+        display: flex;
+        align-items: center;
+        flex: 1;
+    
+      }
+      
+    }
+  
+    .hero{
+      &__container{
+        display: flex;
+      }
+      &__data{
+        padding-right: 1.875em;
+      }
+      &__image{
+        position: relative;
+        left: 6.25rem;
+        img{
+          width: auto;
+        }
+      }
+    }
+  
+    .companies{
+      display: flex;
+      &__info{
+        padding-right: 50px;
+        
+      }
+      &__picture{
+        width: auto;
+      }
+    }
+  
+    .features{
+      &__container{
+        display: flex;
+      }
+      .feature-card{
+        padding-right: 1.875em;
+      }
+    }
+  
+    .quote{
+      position: relative;
+      
+      .container{
+        display: flex;
+        margin-top: 0px;
+      }
+      &__dot__container{
+        position: absolute;
+        bottom: 5rem;
+      }
+    }
+  
+    .stats{
+      .container{
+        display: flex;
+        .stats-item{
+          width: calc(100%/3);
+        }
+      }
+    }
+  
+    .our-apps{
+      .container{
+        display: flex;
+        flex-direction: row;
+      }
+      margin-top: 6em;
+      &__picture{
+        padding-right: 5em;
+      }
+      &__info{
+        order: 1;
+      }
+    }
+  
+    .newsletter{
+      &__container{
+        flex-direction: row;
+      }
+  
+      &__button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      &__description{
+        width: 200px;
+        border-radius: 5px;
+      }
+  
+      .button-newsletter{
+        width: 156px;
+        border-radius: 5px;
+      }
+  
+    }
+  
+    footer{
+      .footer-bar{
+        display: flex;
+        justify-content: space-between;
+    
+      }
+  
+      .footer-details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        &__social-item{
+          margin-right: 0px;
+          margin-left: 20px;
+        }
+      }
+    
+    }
+    
+}

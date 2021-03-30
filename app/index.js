@@ -1,32 +1,9 @@
 'use strict';
 import './style.scss';
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var menuButton = document.querySelector('#menu-button');
+var menuNav = document.querySelector('.main-nav');
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  console.log(n)
-  var i;
-  var slides = document.getElementsByClassName("quote__container");
-  var dots = document.getElementsByClassName("quote__dot__item");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+menuButton.addEventListener('click', function (event) {
+  menuNav.classList.toggle("visible-menu");
+});

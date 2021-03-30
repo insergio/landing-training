@@ -4,6 +4,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <title>Landify</title>
 </head>
@@ -30,9 +31,12 @@
           <img src="/assets/logo.png" alt="Logo" />
         </div>
         <div class="main-nav__buttons">
-          <button class="login button-secondary">Login</button>
-          <button class="sign-up button-primary">Sign up</button>
+          <button class="button-secondary">Login</button>
+          <button class="button-primary">Sign up</button>
         </div>
+        <button href="javascript:void(0);" class="menu-button" id="menu-button">
+          <i class="fa fa-bars"></i>
+        </button>
       </nav>
     </div>
   </header>
@@ -41,11 +45,11 @@
     <section class="hero">
       <div class="container hero__container">
         <article class="hero__data">
-          <h1 class="hero__data__title">Landing page UI Kit</h1>
-          <p class="hero__data__description">
+          <h1 class="hero__title">Landing page UI Kit</h1>
+          <p class="hero__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer
           </p>
-          <button class="hero__data__button button-primary">
+          <button class="button-primary button-primary--big">
             Get Started
           </button>
         </article>
@@ -56,18 +60,21 @@
     </section>
     <section>
       <div class="container">
-        <article class="companies">
+        <div class="companies">
           <div class="companies__info">
-            <h2 class="companies__info__title">Get deals from 100+ companies</h2>
-            <p class="companies__info__description">
+            <h2 class="companies__title">Get deals from 100+ companies</h2>
+            <p class="companies__description">
               Aute ad commodo sit fugiat non.Non Lorem veniam occaecat minim laborum eiusmod laboris non enim incididunt
               sunt laborum.Ex officia dolore cillum officia aute consequat ut officia ex elit duis eiusmod consequat.
             </p>
           </div>
           <img class="companies__picture" src="/assets/companies.png" alt="Our companies" />
-        </article>
+        </div>
+      </div>
+    </section>
 
-
+    <section>
+      <div class="container">
         <div class="stack features">
           <h2>Discover the key features</h2>
           <div class="features__container">
@@ -97,6 +104,7 @@
             </article>
           </div>
         </div>
+      </div>
     </section>
 
     <section class="quote">
@@ -115,30 +123,12 @@
             <p class="quote__position">CEO at Xion</p>
           </article>
 
-          <article class="quote__container">
-            <q class="quote__text">
-              Laborum enim ut labore sint nostrud voluptate esse. Pariatur enim proident labore aliqua Lorem sunt.
-              Tempor
-              duis ipsum ex consequat pariatur incididunt ex officia quis Lorem qui ut mollit.
-            </q>
-            <p class="quote__author">Ernest Hemingway</p>
-            <p class="quote__position">CEO at Xion</p>
-          </article>
+          
 
-          <article class="quote__container">
-            <q class="quote__text">
-              Officia ut nulla mollit amet mollit aliqua veniam. Consequat non fugiat cillum aliquip eu. In occaecat
-              excepteur Lorem ex ea eiusmod minim consequat eiusmod enim pariatur adipisicing dolor. Cillum nisi ullamco
-              duis ipsum.
-            </q>
-            <p class="quote__author">Thomas A. Edison</p>
-            <p class="quote__position">CEO at Xion</p>
-          </article>
-
-          <div class="quote__dot__container">
-            <span class="quote__dot__item" onclick="currentSlide(1)"></span>
-            <span class="quote__dot__item" onclick="currentSlide(2)"></span>
-            <span class="quote__dot__item" onclick="currentSlide(3)"></span>
+          <div class="quote__dot-container">
+            <span class="quote__dot-item" onclick="currentSlide(1)"></span>
+            <span class="quote__dot-item" onclick="currentSlide(2)"></span>
+            <span class="quote__dot-item" onclick="currentSlide(3)"></span>
           </div>
         </div>
 
@@ -178,47 +168,50 @@
           </article>
         </div>
       </div>
-
-      <article class="our-apps">
-        <div class="container">
-          <div class="our-apps__info">
-            <h2 class="our-apps__info__title">Headline</h2>
-            <p class="our-apps__info__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat
-              cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo
-              volutpat, pharetra, vel.
-            </p>
-            <small class="our-apps__info__link">Get started</small>
-          </div>
-          <img class="our-apps__picture" src="/assets/mobile.png" alt="Our mobile" />
-        </div>
-      </article>
-
-
-      <article class="newsletter">
-        <img class="newsletter__picture" src="/assets/mail.png" alt="Our mobile" />
-        <div class="newsletter__info">
-          <h2 class="newsletter__info__title">Join 569 more people in the waitlist</h2>
-          <input class="newsletter__info__description" />
-          <button class="newsletter__info__link">Join the wait list</button>
-        </div>
-
-      </article>
-
     </section>
+
+    <section class="our-apps">
+      <div class="container">
+        <div class="our-apps__info">
+          <h2 class="our-apps__title">Headline</h2>
+          <p class="our-apps__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat
+            cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo
+            volutpat, pharetra, vel.
+          </p>
+          <small class="our-apps__link">Get started</small>
+        </div>
+        <img class="our-apps__picture" src="/assets/mobile.png" alt="Our mobile" />
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="newsletter">
+          <div class="newsletter__container">
+            <img class="newsletter__picture" src="/assets/mail.png" alt="Our mobile" />
+            <div class="newsletter__info">
+              <h2 class="newsletter__title">Join 569 more people in the waitlist</h2>
+              <div class="newsletter__button-container">
+                <input class="newsletter__description" placeholder="Your work email address" /><button 
+                class="button-newsletter">Join the wait list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
   <footer>
     <div class="container">
       <div class="footer-bar">
-
-        <img src="/assets/logo-footer.png" class="footer-bar__logo" alt="Analytics Logo">
-
-
         <ul class="footer-bar__list">
           <li class="footer-bar__item">
-            <h4 href="#" class="footer-bar__title">Company</h4>
+            <h4 class="footer-bar__title">Company</h4>
           </li>
           <li class="footer-bar__item">
             <a href="#" class="footer-bar__link">About Us</a>
@@ -236,7 +229,7 @@
 
         <ul class="footer-bar__list">
           <li class="footer-bar__item">
-            <h4 href="#" class="footer-bar__title">Support</h4>
+            <h4 class="footer-bar__title">Support</h4>
           </li>
           <li class="footer-bar__item">
             <a href="#" class="footer-bar__link">Help Center</a>
@@ -251,7 +244,7 @@
 
         <ul class="footer-bar__list">
           <li class="footer-bar__item">
-            <h4 href="#" class="footer-bar__title">Legal</h4>
+            <h4 class="footer-bar__title">Legal</h4>
           </li>
           <li class="footer-bar__item">
             <a href="#" class="footer-bar__link">Cookies Policy</a>
@@ -268,28 +261,44 @@
         </ul>
 
 
-        <ul class="footer-bar__list-apps">
+        <ul class="footer-bar__list footer-bar__list--apps">
           <li class="footer-bar__item">
-            <h4 href="#" class="footer-bar__title">Install App</h4>
+            <h4 class="footer-bar__title">Install App</h4>
           </li>
-          <li class="footer-bar__item">
+          <li class="footer-bar__item footer-bar__item--apps">
             <a href="#" class="footer-bar__link">
               <img src="/assets/gplay.png" alt="Google Play" />
             </a>
           </li>
-          <li class="footer-bar__item">
-            <a href="#" class="footer-bar__link">
+          <li class="footer-bar__item footer-bar__item--apps">
+            <a href="#" class="footer-bar__link link-app-store">
               <img src="/assets/appstore.png" alt="App Store" />
             </a>
           </li>
         </ul>
       </div>
-
+      <div class="footer-details">
+        <div class="footer-details__copyright">
+          <p>© 2020 Landify UI Kit. All rights reserved</p>
+        </div>
+        <div class="footer-details__social">
+          <a class="footer-details__social-item">
+            <img src="/assets/social-footer-ig.png" />
+          </a>
+          <a class="footer-details__social-item">
+            <img src="/assets/social-footer-dr.png" />
+          </a>
+          <a class="footer-details__social-item">
+            <img src="/assets/social-footer-yt.png" />
+          </a>
+          <a class="footer-details__social-item">
+            <img src="/assets/social-footer-tw.png" />
+          </a>
+        </div>
+      </div>
     </div>
 
   </footer>
-
-
 
 </body>
 
