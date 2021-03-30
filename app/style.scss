@@ -158,6 +158,12 @@ h3{
   background-color: $quote-main;
   text-align: center;
 
+  .carousel-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 40px;
+  }
+
   &__text{
     font-size: 1.125rem;
     line-height: 2rem;
@@ -167,10 +173,33 @@ h3{
     padding-top: 9rem;
     text-align: left;
   }
-
+  
   &__image{
+    text-align: center;
     max-width: 100%;
     padding-top: 5rem;
+    margin: auto;
+  }
+
+  .slick-dots{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    text-align: left;
+    li{
+      margin-right: 1px;
+      button:before{
+        color: #bbb;
+        font-size: 12px;
+        &:hover{
+          color: $quote-accent;
+        } 
+      }
+      &.slick-active button:before{
+        color: $quote-accent;
+      }
+    } 
+
   }
 
   &__dot{

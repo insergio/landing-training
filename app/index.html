@@ -5,6 +5,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <meta charset="UTF-8">
   <title>Landify</title>
 </head>
@@ -108,31 +114,62 @@
     </section>
 
     <section class="quote">
-      <div class="container">
-        <div>
+      <div class="carousel-container">
+        <div class="carousel">
 
-          <article class="quote__container">
-            <q class="quote__text">
-              We had an incredible experience working with Landify and were impressed they made such a big difference in
-              only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to
-              get
-              familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level
-              and get more eyes on our product.
-            </q>
-            <p class="quote__author">John Keats</p>
-            <p class="quote__position">CEO at Xion</p>
-          </article>
+          <div>
+            <div class="quote__container">
+              <div>
+                <q class="quote__text">
+                  We had an incredible experience working with Landify and were impressed they made such a big
+                  difference in
+                  only three weeks. Our team is so grateful for the wonderful improvements they made and their ability
+                  to
+                  get
+                  familiar with the product concept so quickly. It acted as a catalyst to take our design to the next
+                  level
+                  and get more eyes on our product.
+                </q>
+                <p class="quote__author">John Keats</p>
+                <p class="quote__position">CEO at Xion</p>
+              </div>
+              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+            </div>
+          </div>
 
-          
+          <div>
+            <div class="quote__container">
+              <div>
+                <q class="quote__text">
+                  Laborum enim ut labore sint nostrud voluptate esse. Pariatur enim proident labore aliqua Lorem sunt.
+                  Tempor
+                  duis ipsum ex consequat pariatur incididunt ex officia quis Lorem qui ut mollit.
+                </q>
+                <p class="quote__author">Ernest Hemingway</p>
+                <p class="quote__position">CEO at Xion</p>
 
-          <div class="quote__dot-container">
-            <span class="quote__dot-item" onclick="currentSlide(1)"></span>
-            <span class="quote__dot-item" onclick="currentSlide(2)"></span>
-            <span class="quote__dot-item" onclick="currentSlide(3)"></span>
+              </div>
+              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+            </div>
+          </div>
+          <div>
+            <div class="quote__container">
+              <div>
+                <q class="quote__text">
+                  Officia ut nulla mollit amet mollit aliqua veniam. Consequat non fugiat cillum aliquip eu. In occaecat
+                  excepteur Lorem ex ea eiusmod minim consequat eiusmod enim pariatur adipisicing dolor. Cillum nisi
+                  ullamco
+                  duis ipsum.
+                </q>
+                <p class="quote__author">Thomas A. Edison</p>
+                <p class="quote__position">CEO at Xion</p>
+
+              </div>
+              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+            </div>
           </div>
         </div>
 
-        <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
       </div>
     </section>
 
@@ -194,8 +231,8 @@
             <div class="newsletter__info">
               <h2 class="newsletter__title">Join 569 more people in the waitlist</h2>
               <div class="newsletter__button-container">
-                <input class="newsletter__description" placeholder="Your work email address" /><button 
-                class="button-newsletter">Join the wait list</button>
+                <input class="newsletter__description" placeholder="Your work email address" /><button
+                  class="button-newsletter">Join the wait list</button>
               </div>
             </div>
           </div>

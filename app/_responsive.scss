@@ -54,14 +54,20 @@
     .quote{
       position: relative;
       
-      .container{
+      &__container{
         display: flex;
         margin-top: 0px;
       }
+			
       &__dot__container{
         position: absolute;
         bottom: 5rem;
       }
+
+			.slick-dots{
+				top: inherit;
+				bottom: 80px;
+			}
     }
   
     .stats{
