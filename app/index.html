@@ -3,6 +3,7 @@
 
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -56,15 +57,15 @@
   <main>
     <section class="hero">
       <div class="container hero__container">
-        <article class="hero__data">
+        <div class="hero__data">
           <h1 class="hero__title">Landing page UI Kit</h1>
           <p class="hero__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer
           </p>
-          <a class="button-primary button-primary--big">
+          <a class="button-primary button-primary--big" href="#">
             Get Started
           </a>
-        </article>
+        </div>
         <div class="hero__image">
           <img src="/assets/hero-main.png" alt="Creative block" />
         </div>
@@ -96,7 +97,7 @@
               <p class="feature-card__description">
                 Add multiple links in Instagram instead of just one.
               </p>
-              <a><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#"><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
             </article>
             <article class="feature-card">
               <img class=feature-card__image src="/assets/feature-2.png" alt="Our features" />
@@ -104,7 +105,7 @@
               <p class="feature-card__description">
                 Allow your clients to connect with you with one click.
               </p>
-              <a><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#"><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
             </article>
             <article class="feature-card">
               <img class=feature-card__image src="/assets/feature-3.png" alt="Our features" />
@@ -112,7 +113,7 @@
               <p class="feature-card__description">
                 Capture leads and grow your business with them.
               </p>
-              <a><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#"><small class="feature-card__link">Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
             </article>
           </div>
         </div>
@@ -125,7 +126,7 @@
 
           <div>
             <div class="quote__container">
-              <div>
+              <div class="quote__info">
                 <q class="quote__text">
                   We had an incredible experience working with Landify and were impressed they made such a big
                   difference in
@@ -139,13 +140,15 @@
                 <p class="quote__author">John Keats</p>
                 <p class="quote__position">CEO at Xion</p>
               </div>
-              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              <div class="quote__image-container">
+                <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              </div>
             </div>
           </div>
 
           <div>
             <div class="quote__container">
-              <div>
+              <div class="quote__info">
                 <q class="quote__text">
                   Laborum enim ut labore sint nostrud voluptate esse. Pariatur enim proident labore aliqua Lorem sunt.
                   Tempor
@@ -155,12 +158,14 @@
                 <p class="quote__position">CEO at Xion</p>
 
               </div>
-              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              <div class="quote__image-container">
+                <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              </div>
             </div>
           </div>
           <div>
             <div class="quote__container">
-              <div>
+              <div class="quote__info">
                 <q class="quote__text">
                   Officia ut nulla mollit amet mollit aliqua veniam. Consequat non fugiat cillum aliquip eu. In occaecat
                   excepteur Lorem ex ea eiusmod minim consequat eiusmod enim pariatur adipisicing dolor. Cillum nisi
@@ -171,7 +176,9 @@
                 <p class="quote__position">CEO at Xion</p>
 
               </div>
-              <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              <div class="quote__image-container">
+                <img class=quote__image src="/assets/quote-background.png" alt="Quote background" />
+              </div>
             </div>
           </div>
         </div>
@@ -238,7 +245,7 @@
               <h2 class="newsletter__title">Join 569 more people in the waitlist</h2>
               <div class="newsletter__button-container">
                 <input class="newsletter__description" placeholder="Your work email address" /><button
-                  class="button-newsletter">Join the wait list</button>
+                  class="button-newsletter">Join the waitlist</button>
               </div>
             </div>
           </div>
@@ -325,16 +332,16 @@
           <p>© 2020 Landify UI Kit. All rights reserved</p>
         </div>
         <div class="footer-details__social">
-          <a class="footer-details__social-item">
+          <a href="#" class="footer-details__social-item">
             <img src="/assets/social-footer-ig.png" />
           </a>
-          <a class="footer-details__social-item">
+          <a href="#" class="footer-details__social-item">
             <img src="/assets/social-footer-dr.png" />
           </a>
-          <a class="footer-details__social-item">
+          <a href="#" class="footer-details__social-item">
             <img src="/assets/social-footer-yt.png" />
           </a>
-          <a class="footer-details__social-item">
+          <a href="#" class="footer-details__social-item">
             <img src="/assets/social-footer-tw.png" />
           </a>
         </div>
