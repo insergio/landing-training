@@ -47,7 +47,8 @@
           <button class="button-secondary">Login</button>
           <button class="button-primary">Sign up</button>
         </div>
-        <button href="javascript:void(0);" class="menu-button" id="menu-button">
+        <button href="javascript:void(0);" class="menu-button" id="menu-button" aria-label="menu">
+          Menu
           <i class="fa fa-bars"></i>
         </button>
       </nav>
@@ -244,7 +245,8 @@
             <div class="newsletter__info">
               <h2 class="newsletter__title">Join 569 more people in the waitlist</h2>
               <div class="newsletter__button-container">
-                <input class="newsletter__description" placeholder="Your work email address" /><button
+                <label class="newsletter__label" for="newsletter-email">E-mail</label>
+                <input class="newsletter__description" id="newsletter-email" placeholder="Your work email address" /><button
                   class="button-newsletter">Join the waitlist</button>
               </div>
             </div>
@@ -333,16 +335,16 @@
         </div>
         <div class="footer-details__social">
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-ig.png" />
+            <img src="/assets/social-footer-ig.png" alt="Instagram"/>
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-dr.png" />
+            <img src="/assets/social-footer-dr.png" alt="Dribble"/>
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-yt.png" />
+            <img src="/assets/social-footer-yt.png" alt="Youtube"/>
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-tw.png" />
+            <img src="/assets/social-footer-tw.png" alt="Twitter"/>
           </a>
         </div>
       </div>

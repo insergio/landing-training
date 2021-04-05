@@ -35,9 +35,12 @@ h3{
     color: $accent-color;
     background-color: $background-secondary;
     border: 0px;
-    font-size: 2rem;
     border-radius: 5px;
     margin-left: 5px;
+    font-size: 0px;
+    i{
+      font-size: 2rem;
+    }
   }
 
   &.visible-menu{
@@ -358,6 +361,10 @@ h3{
     border-radius: 5px;
     border: 0px;
     font-size: 0.875rem;
+  }
+
+  &__label{
+    display: none;
   }
 
 }
