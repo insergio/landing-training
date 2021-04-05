@@ -1,142 +1,177 @@
 
 @media (min-width: 768px) {
 
-    .main-nav{
-			.menu-button{
-				display: none;
-			}
+  html{
+    font-size: 16px;
+  }
+  
 
-      &__menu{
-        display: flex;
-        align-items: center;
-        flex: 1;
-    
-      }
-			&__buttons{
-				display: block;
-			}
-      
+  .main-nav{
+    .menu-button{
+      display: none;
     }
-  
-    .hero{
-      &__container{
-        display: flex;
-      }
-      &__data{
-        padding-right: 1.875em;
-      }
-      &__image{
-        position: relative;
-        left: 6.25rem;
-        img{
-          width: auto;
-        }
-      }
-    }
-  
-    .companies{
+
+    &__menu{
       display: flex;
-      &__info{
-        padding-right: 50px;
-        
-      }
-      &__picture{
+      align-items: center;
+      flex: 1;
+  
+    }
+    &__buttons{
+      display: block;
+    }
+
+    .mobile{
+      display: none;
+    }
+    
+  }
+
+  .hero{
+    &__container{
+      display: flex;
+      align-items: center;
+
+    }
+    &__data{
+      padding-right: 1.875em;
+    }
+    &__image{
+      position: relative;
+      left: 6.25rem;
+      img{
         width: auto;
       }
     }
-  
-    .features{
-      &__container{
-        display: flex;
-      }
-      .feature-card{
-        padding-right: 1.875em;
-      }
-    }
-  
-    .quote{
-      position: relative;
-      
-      &__container{
-        display: flex;
-        margin-top: 0px;
-      }
-			
-      &__dot__container{
-        position: absolute;
-        bottom: 5rem;
-      }
+  }
 
-			.slick-dots{
-				top: inherit;
-				bottom: 80px;
-			}
+  .companies{
+    display: flex;
+    &__info{
+      padding-right: 3.125rem;
+      
     }
-  
-    .stats{
-      .container{
-        display: flex;
-        .stats-item{
-          width: calc(100%/3);
-        }
-      }
+    &__picture{
+      width: auto;
+      height: 100%;
     }
-  
-    .our-apps{
-      .container{
-        display: flex;
-        flex-direction: row;
-      }
-      margin-top: 6em;
-      &__picture{
-        padding-right: 5em;
-      }
-      &__info{
-        order: 1;
-      }
+  }
+
+  .features{
+    &__container{
+      display: flex;
     }
-  
-    .newsletter{
-      &__container{
-        flex-direction: row;
-      }
-  
-      &__button-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-  
-      &__description{
-        width: 200px;
-        border-radius: 5px;
-      }
-  
-      .button-newsletter{
-        width: 156px;
-        border-radius: 5px;
-      }
-  
+    .feature-card{
+      padding-right: 1.875em;
+      flex-basis: 33%;
     }
-  
-    footer{
-      .footer-bar{
-        display: flex;
-        justify-content: space-between;
+  }
+
+  .quote{
+    position: relative;
     
-      }
-  
-      .footer-details{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 80px;
-        &__social-item{
-          margin-right: 0px;
-          margin-left: 20px;
-        }
-      }
-    
+    &__container{
+      display: flex;
+      margin-top: 0px;
     }
     
+    &__dot__container{
+      position: absolute;
+      bottom: 5rem;
+    }
+
+    &__image-container{
+      position: relative;
+      min-width: 350px;
+      min-height: 556px;
+      padding-left: 20px;
+    }
+
+    &__image{
+      position: absolute;
+      bottom: 0px;
+    }
+
+    &__info{
+      padding-bottom: 7rem;
+    }
+
+    .slick-dots{
+      top: inherit;
+      bottom: 5rem;
+    }
+  }
+
+  .stats{
+    .container{
+      display: flex;
+      .stats-item{
+        width: calc(100%/3);
+      }
+    }
+  }
+
+  .our-apps{
+    .container{
+      display: flex;
+      flex-direction: row;
+    }
+    margin-top: 6em;
+    &__picture{
+      padding-right: 5em;
+    }
+    &__info{
+      order: 1;
+    }
+  }
+
+  .newsletter{
+    &__container{
+      flex-direction: row;
+    }
+
+    &__button-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__description{
+      width: 200px;
+      border-radius: 5px;
+      border: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+
+    }
+
+    .button-newsletter{
+      width: 175px;
+      border-radius: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+  }
+
+  footer{
+    .footer-bar{
+      display: flex;
+      justify-content: space-between;
+  
+    }
+
+    .footer-details{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5rem;
+      &__social-item{
+        margin-right: 0px;
+        margin-left: 20px;
+      }
+    }
+  
+  }
+  
 }

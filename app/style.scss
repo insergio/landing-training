@@ -1,27 +1,31 @@
 @import "./_variables";
 @import "./_common";
 
+html{
+  font-size: calc(0.6em + 1vw);
+}
+
 body{
   font-family: 'Manrope', sans-serif;
   margin: 0px;
 }
 
 h1{
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: bold;
 }
 
 h2{
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 h3{
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 
 .main-nav{
-  padding: 50px 0px 50px;
+  padding: 3.125em 0px 3.125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +35,7 @@ h3{
     color: $accent-color;
     background-color: $background-secondary;
     border: 0px;
-    font-size: 2em;
+    font-size: 2rem;
     border-radius: 5px;
     margin-left: 5px;
   }
@@ -72,7 +76,7 @@ h3{
     flex: 1;
   }
   &__logo{
-    height: 40px;
+    height: 2.5rem;
     text-align: center;
     img{
       padding-top: 5px;
@@ -109,7 +113,7 @@ h3{
 
   &__data{
     margin-top: 0px;
-    margin-bottom: 5em;
+    margin-bottom: 5rem;
   }
   &__title{
     margin-top: 0px;
@@ -128,9 +132,13 @@ h3{
 }
 
 .companies{
-  margin-top: 2em;
+  margin-top: 2rem;
+  &__title{
+    margin-bottom: 1rem;
+  }
   &__description{
     font-size: 1.125rem;
+    margin-top: 0.5rem;
   }
   &__picture{
     width: 100%;
@@ -167,9 +175,22 @@ h3{
   .carousel-container{
     max-width: 1200px;
     margin: auto;
-    padding: 0px 40px;
+    padding: 0px 2.5rem;
+    .carousel{
+    &::after{
+      display: block;
+      content: ' ';
+      background-image: url('/assets/quotation.png');
+      background-size: 4.375rem 3.75rem;
+      height: 3.75rem;
+      width: 4.375rem;
+      top: 7.1875rem;
+      opacity: 0.4;
+      left: -2.1875rem;
+      position: absolute;
+    }
   }
-
+  }
   &__text{
     font-size: 1.125rem;
     line-height: 2rem;
@@ -178,6 +199,7 @@ h3{
   &__container{
     padding-top: 9rem;
     text-align: left;
+    
   }
   
   &__image{
@@ -254,22 +276,22 @@ h3{
       display: flex;
       margin-top: 0px;
       img{
-        margin-right: 0.5em;
-        height: 2em;
-        width: 2em;
+        margin-right: 0.5rem;
+        height: 2rem;
+        width: 2rem;
       }
     }
   }
 }
 
 .our-apps{
-  margin-bottom: 8em;
+  margin-bottom: 8rem;
   .container{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  margin-top: 6em;
+  margin-top: 6rem;
   &__picture{
     width: 100%;
   }
@@ -285,7 +307,7 @@ h3{
   }
   &__link{
     color: $accent-color;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
   }
 }
@@ -317,7 +339,7 @@ h3{
   }
   &__title{
     color: $text-color-secondary;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-top: 0px;
   }
   &__button-container{
@@ -330,6 +352,7 @@ h3{
     max-width: 100%;
     padding-left: 10px;
     border-radius: 5px 0px 0px 5px;
+    font-size: 0.875rem;
   }
 
 }
@@ -355,14 +378,14 @@ footer{
       color: $footer-title-color;
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.125em;
+      font-size: 1.125rem;
       margin-top: 50px;
     }
     &__link{
       color: $footer-text-color;
       text-decoration: none;
       font-weight: 400;
-      font-size: 0.875em;
+      font-size: 0.875rem;
     }
 
   }
@@ -372,7 +395,7 @@ footer{
     padding-bottom: 30px;
     &__copyright{
       color: $footer-copyright-color;
-      font-size: 0.875em;
+      font-size: 0.875rem;
       font-weight: 400;
     }
     &__social-item{
