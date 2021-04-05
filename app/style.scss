@@ -159,6 +159,7 @@ h3{
     &__link{
       color: $accent-color;
       font-weight: bold;
+      text-decoration: none;
     }
     .link-arrow{
       position: relative;
@@ -306,9 +307,12 @@ h3{
     line-height: 2rem;
   }
   &__link{
-    color: $accent-color;
-    font-size: 1.25rem;
-    font-weight: 700;
+    text-decoration: none;
+    small{
+      color: $accent-color;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
   }
 }
 
