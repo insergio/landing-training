@@ -28,28 +28,33 @@
   }
 
   .hero{
+    display: flex;
     &__container{
       display: flex;
-      align-items: center;
-
-    }
-    &__data{
-      padding-right: 1.875em;
+      margin-right: 0px;
+      max-width: 600px;
+      padding: 0px 0px 0px 2.5rem;
     }
     &__image{
-      position: relative;
-      left: 6.25rem;
+      flex-basis: 50%;
+      text-align: right;
       img{
         width: auto;
       }
+    }
+    &__data{
+      max-width: 500px;
+      padding-right: 5em;
+
     }
   }
 
   .companies{
     display: flex;
+    justify-content: space-between;
     &__info{
       padding-right: 3.125rem;
-      
+      max-width: 28.25rem;
     }
     &__picture{
       width: auto;
@@ -62,7 +67,7 @@
       display: flex;
     }
     .feature-card{
-      padding-right: 1.875em;
+      padding-right: 2.825rem;
       flex-basis: 33%;
     }
   }

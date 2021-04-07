@@ -4,20 +4,21 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg" href="/assets/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <meta charset="UTF-8">
   <title>Landify</title>
 </head>
 
 
 <body>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <header>
     <div class="container">
       <nav class="main-nav" aria-label="Main">
@@ -41,11 +42,11 @@
           </ul>
         </div>
         <div class="main-nav__logo">
-          <img src="/assets/logo.png" alt="Logo" />
+          <img src="/assets/logo.svg" alt="Logo" />
         </div>
         <div class="main-nav__buttons">
-          <button class="button-secondary">Login</button>
-          <button class="button-primary">Sign up</button>
+          <a class="button-secondary" href="javascript:void(0);">Login</a>
+          <a class="button-primary" href="javascript:void(0);">Sign up</a>
         </div>
         <button href="javascript:void(0);" class="menu-button" id="menu-button" aria-label="menu">
           Menu
@@ -67,9 +68,9 @@
             Get Started
           </a>
         </div>
-        <div class="hero__image">
-          <img src="/assets/hero-main.png" alt="Creative block" />
-        </div>
+      </div>
+      <div class="hero__image">
+        <img src="/assets/hero-main.png" alt="Creative block" />
       </div>
     </section>
     <section>
@@ -78,8 +79,8 @@
           <div class="companies__info">
             <h2 class="companies__title">Get deals from 100+ companies</h2>
             <p class="companies__description">
-              Aute ad commodo sit fugiat non.Non Lorem veniam occaecat minim laborum eiusmod laboris non enim incididunt
-              sunt laborum.Ex officia dolore cillum officia aute consequat ut officia ex elit duis eiusmod consequat.
+              Subscribe to our application and get deals from top notch companies in the world every month. Be an
+              exclusive member of the team.
             </p>
           </div>
           <img class="companies__picture" src="/assets/companies.png" alt="Our companies" />
@@ -98,7 +99,8 @@
               <p class="feature-card__description">
                 Add multiple links in Instagram instead of just one.
               </p>
-              <a href="#" class="feature-card__link"><small>Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#" class="feature-card__link"><small>Know more <img class="link-arrow" src="/assets/arrow.svg"
+                    alt="Link arrow"></small></a>
             </article>
             <article class="feature-card">
               <img class=feature-card__image src="/assets/feature-2.png" alt="Our messaging" />
@@ -106,7 +108,8 @@
               <p class="feature-card__description">
                 Allow your clients to connect with you with one click.
               </p>
-              <a href="#" class="feature-card__link"><small>Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#" class="feature-card__link"><small>Know more <img class="link-arrow" src="/assets/arrow.svg"
+                    alt="Link arrow"></small></a>
             </article>
             <article class="feature-card">
               <img class=feature-card__image src="/assets/feature-3.png" alt="Our forms" />
@@ -114,7 +117,8 @@
               <p class="feature-card__description">
                 Capture leads and grow your business with them.
               </p>
-              <a href="#" class="feature-card__link"><small>Show more <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+              <a href="#" class="feature-card__link"><small>Know more <img class="link-arrow" src="/assets/arrow.svg"
+                    alt="Link arrow"></small></a>
             </article>
           </div>
         </div>
@@ -193,7 +197,7 @@
           <article class="stats-item">
             <h3 class="stats-item__title">700k</h3>
             <div class="stats-item__description">
-              <img class=stats-item__image src="/assets/social-dr.png" alt="Youtube" />
+              <img class=stats-item__image src="/assets/social-yt.png" alt="Youtube" />
               <p>
                 Youtube subscribers
               </p>
@@ -211,7 +215,7 @@
           <article class="stats-item">
             <h3 class="stats-item__title">100k</h3>
             <div class="stats-item__description">
-              <img class=stats-item__image src="/assets/social-yt.png" alt="Dribble" />
+              <img class=stats-item__image src="/assets/social-dr.png" alt="Dribble" />
               <p>
                 Dribble Shot Likes
               </p>
@@ -230,7 +234,8 @@
             cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo
             volutpat, pharetra, vel.
           </p>
-          <a href="" class="our-apps__link"><small>Get started <img class="link-arrow" src="/assets/arrow.svg" alt="Link arrow"></small></a>
+          <a href="" class="our-apps__link"><small>Get started <img class="link-arrow" src="/assets/arrow.svg"
+                alt="Link arrow"></small></a>
         </div>
         <img class="our-apps__picture" src="/assets/mobile.png" alt="Our mobile" />
       </div>
@@ -246,8 +251,8 @@
               <h2 class="newsletter__title">Join 569 more people in the waitlist</h2>
               <div class="newsletter__button-container">
                 <label class="newsletter__label" for="newsletter-email">E-mail</label>
-                <input class="newsletter__description" id="newsletter-email" placeholder="Your work email address" /><button
-                  class="button-newsletter">Join the waitlist</button>
+                <input class="newsletter__description" id="newsletter-email"
+                  placeholder="Your work email address" /><button class="button-newsletter">Join the waitlist</button>
               </div>
             </div>
           </div>
@@ -335,16 +340,16 @@
         </div>
         <div class="footer-details__social">
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-ig.png" alt="Instagram"/>
+            <img src="/assets/social-footer-ig.png" alt="Instagram" />
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-dr.png" alt="Dribble"/>
+            <img src="/assets/social-footer-dr.png" alt="Dribble" />
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-yt.png" alt="Youtube"/>
+            <img src="/assets/social-footer-yt.png" alt="Youtube" />
           </a>
           <a href="#" class="footer-details__social-item">
-            <img src="/assets/social-footer-tw.png" alt="Twitter"/>
+            <img src="/assets/social-footer-tw.png" alt="Twitter" />
           </a>
         </div>
       </div>
