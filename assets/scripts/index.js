@@ -1,7 +1,7 @@
 'use strict';
 import '../styles/style.scss';
 
-var menuButton = document.querySelector('#js-menu-button');
+var menuButton = document.querySelector('.js-menu-button');
 var menuNav = document.querySelector('.js-main-nav');
 
 menuButton.addEventListener('click', function (event) {
@@ -9,7 +9,7 @@ menuButton.addEventListener('click', function (event) {
 });
 
 $(document).ready(function(){
-  $('.carousel').slick({
+  $('.js-carousel').slick({
     dots: true,
     infinite: true,
     speed: 500,
