@@ -1,0 +1,42 @@
+.hero{
+	overflow-x: hidden;
+
+	&__data{
+		margin-top: 0px;
+		margin-bottom: 2rem;
+		@media (min-width: 768px) {
+			max-width: 500px;
+      padding-right: 5em;
+      margin-bottom: 5rem;
+		}
+	}
+	&__title{
+		margin-top: 0px;
+		margin-bottom: 1rem;
+	}
+	&__description{
+		margin-top: 0;
+		margin-bottom: 2rem;
+		font-size: 1.125rem;
+		line-height: 2rem;
+		font-weight: 300;
+	}
+	&__image{ 
+		img{
+			width: 100%;
+		}
+		
+		@media (min-width: 768px) {
+			flex-basis: 50%;
+      text-align: right;
+      img{
+        width: auto;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+    display: flex;
+	}
+
+}

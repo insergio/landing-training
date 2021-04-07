@@ -1,8 +1,8 @@
 'use strict';
-import './style.scss';
+import '../styles/style.scss';
 
-var menuButton = document.querySelector('#menu-button');
-var menuNav = document.querySelector('.main-nav');
+var menuButton = document.querySelector('#js-menu-button');
+var menuNav = document.querySelector('.js-main-nav');
 
 menuButton.addEventListener('click', function (event) {
   menuNav.classList.toggle("visible-menu");
