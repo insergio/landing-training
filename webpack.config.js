@@ -11,7 +11,7 @@ var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
 
 var entrypoint = process.env.npm_lifecycle_event === 'dev' ?
   'webpack-dev-server/client?http://localhost:8080' :
-  './app/index.js';
+  './assets/scripts/index.js';
 
 module.exports = {
   entry: entrypoint,
@@ -24,6 +24,8 @@ module.exports = {
       {
         test: /\.js$/,
         include: __dirname + '/app',
+        include: __dirname + '/assets',
+
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'stage-0']
@@ -32,6 +34,7 @@ module.exports = {
       {
         test: /\.scss$/,
         include: __dirname + '/app',
+        include: __dirname + '/assets',
         loader: ExtractTextPlugin.extract('css!sass')
       }
     ]

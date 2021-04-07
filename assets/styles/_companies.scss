@@ -1,0 +1,31 @@
+.companies{
+	margin-top: 2rem;
+	&__title{
+		margin-bottom: 1rem;
+		@media (min-width: 768px) {
+      margin-top: 0px;
+		}
+	}
+	&__description{
+		font-size: 1.125rem;
+		margin-top: 0.5rem;
+		font-weight: 300;
+		line-height: 2rem;
+	}
+	&__picture{
+		width: 100%;
+		@media (min-width: 768px) {
+      width: auto;
+      height: 100%;
+		}
+	}
+	@media (min-width: 768px) {
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+		&__info{
+      padding-right: 3.125rem;
+      max-width: 28.25rem;
+    }
+	}
+}
