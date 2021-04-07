@@ -4,6 +4,21 @@
   html{
     font-size: 16px;
   }
+
+  h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+  }
+  
+  h2{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   
 
   .main-nav{
@@ -28,28 +43,37 @@
   }
 
   .hero{
+    display: flex;
     &__container{
       display: flex;
-      align-items: center;
-
-    }
-    &__data{
-      padding-right: 1.875em;
+      margin-right: 0px;
+      max-width: 600px;
+      padding: 0px 0px 0px 2.5rem;
     }
     &__image{
-      position: relative;
-      left: 6.25rem;
+      flex-basis: 50%;
+      text-align: right;
       img{
         width: auto;
       }
+    }
+    &__data{
+      max-width: 500px;
+      padding-right: 5em;
+      margin-bottom: 5rem;
     }
   }
 
   .companies{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     &__info{
       padding-right: 3.125rem;
-      
+      max-width: 28.25rem;
+    }
+    &__title{
+      margin-top: 0px;
     }
     &__picture{
       width: auto;
@@ -62,7 +86,7 @@
       display: flex;
     }
     .feature-card{
-      padding-right: 1.875em;
+      padding-right: 2.825rem;
       flex-basis: 33%;
     }
   }
@@ -174,4 +198,13 @@
   
   }
   
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  .newsletter{
+    background: url(/assets/2x/newsletter-bg@2x.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
