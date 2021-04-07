@@ -12,17 +12,17 @@ body{
 }
 
 h1{
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -123,7 +123,7 @@ p{
 
   &__data{
     margin-top: 0px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   &__title{
     margin-top: 0px;
@@ -194,7 +194,7 @@ p{
     &::after{
       display: block;
       content: ' ';
-      background-image: url('/assets/quotation.png');
+      background-image: url('/assets/quotation.svg');
       background-size: 4.375rem 3.75rem;
       height: 3.75rem;
       width: 4.375rem;

@@ -4,6 +4,21 @@
   html{
     font-size: 16px;
   }
+
+  h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+  }
+  
+  h2{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   
 
   .main-nav{
@@ -45,16 +60,20 @@
     &__data{
       max-width: 500px;
       padding-right: 5em;
-
+      margin-bottom: 5rem;
     }
   }
 
   .companies{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &__info{
       padding-right: 3.125rem;
       max-width: 28.25rem;
+    }
+    &__title{
+      margin-top: 0px;
     }
     &__picture{
       width: auto;
@@ -179,4 +198,13 @@
   
   }
   
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  .newsletter{
+    background: url(/assets/2x/newsletter-bg@2x.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
