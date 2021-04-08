@@ -8,9 +8,11 @@ footer{
 			list-style-type: none;
 			margin: 0px;
 			padding-left: 0px;
+			padding-right: 4.5rem;
 		}
 		&__item{
-			margin-bottom: 10px;
+			margin-bottom: 12px;
+    	line-height: 24px;
 			&--apps{
 				margin-bottom: 20px;
 			}
@@ -37,8 +39,7 @@ footer{
 	}
 
 	.footer-details{
-		margin-top: 50px;
-		padding-bottom: 30px;
+		padding: 1rem 2.5rem;
 		&__copyright{
 			color: $footer-copyright-color;
 			font-size: 0.875rem;
@@ -56,7 +57,15 @@ footer{
 			display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 5rem;
+			padding: 1rem;
+		}
+	}
+
+	.footer-details-fluid{
+		margin-top: 3.125rem;
+		border: 1px solid rgba($color: $border-copyright-color, $alpha: 0.1);
+		@media (min-width: 768px) {
+      margin-top: 4rem;
 		}
 	}
 
