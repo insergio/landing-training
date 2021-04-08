@@ -5,7 +5,7 @@
 	text-align: center;
 
 	.carousel-container{
-		max-width: 1200px;
+		max-width: 1110px;
 		margin: auto;
 		padding: 0px 2.5rem;
 		.carousel{
@@ -16,9 +16,9 @@
 				background-size: 4.375rem 3.75rem;
 				height: 3.75rem;
 				width: 4.375rem;
-				top: 7.1875rem;
+				top: 7.313rem;
 				opacity: 0.4;
-				left: -2.1875rem;
+				left: -3.125rem;
 				position: absolute;
 			}
 		}
@@ -27,14 +27,18 @@
 		font-size: 1.125rem;
 		line-height: 2rem;
 		font-weight: 300;
+		&::before, &::after{
+			content: none;
+		}
 	}
 
 	&__container{
-		padding-top: 9rem;
 		text-align: left;
 		@media (min-width: 768px) {
 			display: flex;
 			margin-top: 0px;
+			justify-content: space-between;
+			padding-top: 2.5rem;
 		}	
 		
 	}
@@ -42,7 +46,7 @@
 	&__image{
 		text-align: center;
 		max-width: 100%;
-		padding-top: 5rem;
+		margin-top: 5rem;
 		margin: auto;
 		@media (min-width: 768px) {
 			position: absolute;
@@ -100,6 +104,17 @@
 	&__position{
 		margin-top: 0.5rem;
 	}
+
+	&__image-container{
+		padding-top: 2rem;
+		@media (min-width: 768px) {
+			position: relative;
+			min-width: 350px;
+			min-height: 556px;
+			padding-left: 20px;
+			padding-top: 0px;
+		}
+	}
 	
 	.active, .dot:hover {
 		background-color: $quote-accent;
@@ -107,14 +122,10 @@
 	
 	@media (min-width: 768px) {
 		position: relative;
-		&__image-container{
-			position: relative;
-			min-width: 350px;
-			min-height: 556px;
-			padding-left: 20px;
-		}
 		&__info{
 			padding-bottom: 7rem;
+			width: 720px;
+			padding-top: 6.75rem;
 		}
 	}	
 	
